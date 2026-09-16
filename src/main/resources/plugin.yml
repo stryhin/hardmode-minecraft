@@ -1,0 +1,23 @@
+name: HardModePerPlayer
+version: '1.0.0'
+main: com.stryserbox.hardmodeperplayer.HardModePerPlayer
+api-version: '1.21'
+author: STRYSERBOX
+description: >
+  Aplica un comportamiento equivalente a dificultad Hard vanilla solo a una
+  lista de jugadores fijada en el codigo, sin depender de otros plugins.
+commands:
+  hardmode:
+    description: Comandos de administracion de HardModePerPlayer.
+    usage: /hardmode <reload|check <jugador>>
+    permission: hardmodeperplayer.admin
+permissions:
+  hardmodeperplayer.admin:
+    description: Permite administrar el plugin (reload, check)
+    default: op
+  hardmodeperplayer.hard:
+    description: >
+      Jugadores con este permiso reciben el comportamiento tipo Hard vanilla
+      (hambre que puede matar, y opcionalmente mas dano). Asignalo con
+      LuckPerms, ej: /lp user <nombre> permission set hardmodeperplayer.hard true
+    default: false

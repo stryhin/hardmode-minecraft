@@ -1,0 +1,25 @@
+# HardModePerPlayer funciona por PERMISOS, no por listas de nombres.
+# Asigna el permiso con LuckPerms (o el plugin de permisos que uses):
+#
+#   /lp user <jugador> permission set hardmodeperplayer.hard true
+#
+# El jugador que tenga ese permiso en 'true' recibe el comportamiento de
+# Hard vanilla descrito abajo. Quien no lo tenga (o lo tenga en 'false')
+# se queda con el comportamiento normal del servidor.
+#
+# Ejemplo para tu caso actual:
+#   /lp user estebanco permission set hardmodeperplayer.hard true
+#   /lp user Garchermania permission set hardmodeperplayer.hard true
+#   /lp user TREWQ02 permission set hardmodeperplayer.hard true
+#   /lp user Monkeygamer3089 permission set hardmodeperplayer.hard true
+#   /lp user martinainsa permission set hardmodeperplayer.hard false
+
+# Multiplicador de dano recibido de mobs hostiles para quien tenga el
+# permiso hardmodeperplayer.hard. Pon 1.0 si NO quieres dano extra y solo
+# quieres el resto de comportamiento de Hard (hambre que mata).
+hard-incoming-damage-multiplier: 1.0
+
+# En Hard vanilla el hambre puede matar hasta dejarte con 1 corazon (en
+# Normal se para en 1 corazon y medio, y en Facil no quita vida). Esto
+# replica ese comportamiento para quien tenga el permiso hard.
+hunger-can-kill: true
